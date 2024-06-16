@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, signal} from '@angular/core';
 import {DatePipe} from "@angular/common";
 
 @Component({
@@ -13,6 +13,8 @@ import {DatePipe} from "@angular/common";
 export class ProgramWidgetComponent {
 
   @Input() name:string =''
+
+ // name=signal('');
 
   date=new Date()
 }
